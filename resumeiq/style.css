@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+
+:root {
+  --paper: #F4F7F5;
+  --ink: #16231F;
+  --muted: #4A5A55;
+  --pine: #0F5C4D;
+  --hl: #FFE066;
+  --marker: #D13B3B;
+  --rule: #DCE6E1;
+}
+
+html, body, .stApp, [data-testid="stMarkdownContainer"], .stTextArea textarea, button {
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+}
+h1, h2, h3, .display { font-family: 'Bricolage Grotesque', 'IBM Plex Sans', sans-serif; letter-spacing: -0.01em; }
+
+#MainMenu, footer, header[data-testid="stHeader"] { visibility: hidden; height: 0; }
+.block-container { padding-top: 2.2rem; max-width: 1180px; }
+
+/* hero */
+.hero h1 { font-size: 3rem; font-weight: 700; margin: 0 0 .4rem 0; padding: 0; }
+.hero p { font-size: 1.1rem; max-width: 62ch; color: var(--muted); margin: 0 0 1.6rem 0; line-height: 1.55; }
+
+/* inputs */
+.stTextArea textarea {
+  background: #fff; border: 1px solid var(--rule); border-radius: 8px;
+  font-size: .95rem; line-height: 1.55;
+}
+.stButton > button {
+  background: #fff; border: 1px solid var(--rule); border-radius: 8px;
+  color: var(--ink); font-weight: 500;
+}
+.stButton > button:hover { border-color: var(--pine); color: var(--pine); }
+.stButton > button[kind="primary"] {
+  background: var(--pine); border: none; color: #fff; font-weight: 600; padding: .6rem 1.6rem;
+}
+.stButton > button[kind="primary"]:hover { background: #0B4A3E; color: #fff; }
+
+/* tabs */
+.stTabs [data-baseweb="tab-list"] { gap: 1.8rem; border-bottom: 1px solid var(--rule); }
+.stTabs [data-baseweb="tab"] { font-weight: 500; padding: .7rem 0; }
+.stTabs [aria-selected="true"] { color: var(--pine); }
+
+/* score ring */
+.ring {
+  --p: 50; --c: var(--pine);
+  width: 190px; height: 190px; border-radius: 50%;
+  background: conic-gradient(var(--c) calc(var(--p) * 1%), var(--rule) 0);
+  display: grid; place-items: center;
+}
+.ring-in {
+  width: 150px; height: 150px; border-radius: 50%; background: var(--paper);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.ring-in .num { font-family: 'Bricolage Grotesque', sans-serif; font-size: 3.6rem; font-weight: 700; line-height: 1; }
+.ring-in .of { font-size: .85rem; color: var(--muted); margin-top: .2rem; }
+
+.verdict { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.7rem; font-weight: 700; margin: 0 0 .3rem 0; line-height: 1.2; }
+.sub { color: var(--muted); margin: 0 0 1rem 0; }
+
+.stat { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid var(--rule); padding: .6rem 0; }
+.stat span { color: var(--muted); }
+.stat b { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.3rem; }
+
+.todo { padding: .65rem 0; border-bottom: 1px solid var(--rule); }
+.todo small { display: block; color: var(--muted); margin-top: .1rem; }
+
+/* skill chips */
+.chip { display: inline-block; padding: .22rem .7rem; margin: 0 .4rem .45rem 0; border-radius: 6px; font-size: .92rem; }
+.chip.hit { background: var(--hl); color: var(--ink); }
+.chip.miss { background: #fff; border: 1.5px solid var(--marker); color: #9B1C1C; }
+.chip.extra { background: #E6EEEA; color: var(--ink); }
+.chip em { font-style: normal; opacity: .7; margin-left: .3rem; }
+
+/* marked-up text */
+.paper {
+  background: #fff; border: 1px solid var(--rule); border-radius: 8px;
+  padding: 1.1rem 1.3rem; line-height: 1.8; font-size: .95rem;
+  max-height: 540px; overflow: auto;
+}
+.paper mark.hit { background: linear-gradient(transparent 32%, var(--hl) 32%); color: inherit; padding: 0 2px; }
+.paper mark.miss { background: none; color: inherit; text-decoration: underline wavy var(--marker); text-underline-offset: 4px; }
+.legend { font-size: .9rem; color: var(--muted); margin: 0 0 .8rem 0; }
+.legend mark.hit { background: linear-gradient(transparent 32%, var(--hl) 32%); padding: 0 2px; color: var(--ink); }
+.legend mark.miss { background: none; text-decoration: underline wavy var(--marker); text-underline-offset: 4px; color: var(--ink); }
+
+h4.section { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.15rem; margin: 1.4rem 0 .6rem 0; }
+
+@media (max-width: 640px) {
+  .hero h1 { font-size: 2.2rem; }
+  .ring { width: 150px; height: 150px; }
+  .ring-in { width: 118px; height: 118px; }
+  .ring-in .num { font-size: 2.8rem; }
+}

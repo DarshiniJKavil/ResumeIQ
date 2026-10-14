@@ -1,0 +1,25 @@
+Junior AI/ML Engineer - Bengaluru
+
+About the role
+We are looking for a Junior AI/ML Engineer to help build and deploy AI-powered features for our products.
+
+Responsibilities
+- Build and evaluate machine learning and NLP models using Python and scikit-learn
+- Develop LLM-based applications and Retrieval-Augmented Generation (RAG) pipelines
+- Work with a vector database such as FAISS or ChromaDB to store and search embeddings
+- Perform data preprocessing, exploratory data analysis and feature engineering
+- Build REST APIs using FastAPI or Flask and deploy using Docker
+- Write clean, well-tested code and use Git for version control
+- Collaborate with the team and communicate results clearly
+
+Requirements
+- Bachelor's degree in Computer Science, AI/ML or a related field
+- Strong Python and SQL skills
+- Good understanding of machine learning, statistics and model evaluation
+- Familiarity with Pandas, NumPy and Matplotlib
+- Basic knowledge of Streamlit for building demos
+- Good problem solving and debugging skills
+
+Nice to have
+- Experience with prompt engineering
+- Exposure to AWS or Azure

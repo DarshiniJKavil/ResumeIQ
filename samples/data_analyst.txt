@@ -1,0 +1,21 @@
+Data Analyst - Bengaluru
+
+About the role
+We are hiring a Data Analyst to turn business data into clear insights for our product and sales teams.
+
+Responsibilities
+- Clean and analyze large datasets using Python, SQL and Excel
+- Build interactive dashboards in Power BI or Tableau
+- Perform exploratory data analysis and present findings to stakeholders
+- Apply statistics to find trends and support business decisions
+- Automate recurring reports and maintain data pipelines
+
+Requirements
+- Strong SQL and Python (Pandas, NumPy) skills
+- Hands-on experience with Power BI, including data visualization and reporting
+- Good knowledge of statistics and data analysis
+- Good communication and team collaboration skills
+
+Nice to have
+- Experience with ETL or data pipelines
+- Familiarity with Git and basic cloud tools such as AWS
